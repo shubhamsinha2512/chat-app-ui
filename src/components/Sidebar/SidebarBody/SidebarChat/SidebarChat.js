@@ -6,7 +6,7 @@ import {Avatar} from '@material-ui/core'
 function SidebarChat() {
     return (
         <div className="sidebarChat">
-            <Avatar />
+            <Avatar src={`https://ui-avatars.com/api/?name=John+Doe`} />
             <div className="sidebarChat_details">
                 <h3>Name</h3>
                 <p>msg</p>

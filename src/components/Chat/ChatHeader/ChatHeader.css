@@ -1,0 +1,11 @@
+.chatHeader{
+    display: flex;
+    max-height: 50px;
+    padding: 2%;
+    background-color: #dce9ef;
+    color: #0035ba;
+}
+
+.chatHeader_details{
+    flex:1;
+}
