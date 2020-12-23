@@ -1,0 +1,23 @@
+.sidebarHeader{
+    display: flex;
+    background-color: #0035ba;
+    padding: 5%;
+    width: 90%;
+}
+
+.sidebarHeader > form{
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.sidebarHeader > form > input{
+
+    height: 20px;
+    width: 90%;
+}
+
+.sidebarHeader > form > button{
+    position: absolute;
+    height: 20px;
+}

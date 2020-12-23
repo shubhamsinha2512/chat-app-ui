@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebarChat{
+    display: flex;
+    padding: 15px 20px;
+    background-color: #328baa;
+    border: 1px solid white;
+}
+
+.sidebarChat_details {
+    margin-left: 20px;
+}
