@@ -1,0 +1,13 @@
+.chatBody{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    background-color: #fafbfd;
+    padding:10px 20px;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    background:transparent;
+}

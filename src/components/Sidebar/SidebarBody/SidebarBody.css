@@ -2,3 +2,13 @@
     flex:1;
     overflow: scroll;
 }
+
+.focus{
+    background-color: #004492;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    background-color: transparent;
+}

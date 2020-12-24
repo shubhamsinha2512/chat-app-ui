@@ -1,23 +1,36 @@
 .sidebarHeader{
     display: flex;
-    background-color: #0035ba;
+    background-color:#003f88;
     padding: 5%;
     width: 90%;
+    align-items: center;
 }
 
 .sidebarHeader > form{
     position: relative;
-    margin: 0 auto;
-    width: 90%;
+    display: flex;
+    flex: 1;
+    color: white;
+    /* width: 90%; */
 }
 
 .sidebarHeader > form > input{
+    flex: 1;
+    border: none;
+    background-color: #dec9ef;
+    opacity: 0.8;
+    padding: 0 10px;
+}
 
-    height: 20px;
-    width: 90%;
+.sidebarHeader > form > input::placeholder{
+    color: white;
+}
+
+.sidebarHeader > form > input::-ms-value{
+    color: white;
 }
 
 .sidebarHeader > form > button{
-    position: absolute;
-    height: 20px;
+    border: none;
+    background-color: white;
 }
