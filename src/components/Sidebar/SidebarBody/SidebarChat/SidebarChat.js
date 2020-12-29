@@ -3,7 +3,7 @@ import './SidebarChat.css'
 
 import {Avatar} from '@material-ui/core'
 
-function SidebarChat({key, chat}) {
+function SidebarChat({chat}) {
     // console.log(chat.name);
     // console.log(chat.messages[0].body);
 

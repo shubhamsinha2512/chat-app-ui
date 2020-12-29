@@ -4,7 +4,12 @@
     flex:1;
     background-color: #fafbfd;
     padding:10px 20px;
+    scroll-behavior: smooth;
     overflow: scroll;
+}
+
+.chatScroll{
+    flex:1;
 }
 
 ::-webkit-scrollbar{

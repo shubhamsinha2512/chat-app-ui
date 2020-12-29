@@ -8,7 +8,8 @@ function Message(props) {
         <div className={`message ${props.classes}`}>
             <Avatar className="messageAvatar" />
             <div className="messageContainer" >
-                <p className="messageBody" >This is a message</p>
+                {/* {console.log(props.body)} */}
+                <p className="messageBody" >{props.body}</p>
                 <span className="messageTime" >3:22 pm</span>
             </div>
         </div>

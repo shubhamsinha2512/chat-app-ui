@@ -6,13 +6,19 @@ import ChatBody from './ChatBody/ChatBody'
 import ChatFooter from './ChatFooter/ChatFooter'
 import './Chat.css'
 
-function Chat() {
+function Chat({chats, updateMessage}) {
 
+    // console.log(chats[0]);
+    
+    
+    var name = chats[0].name, messages = chats[0].messages;
+    // console.log(name, messages);
+    
     return (
         <div className="chat">
-            <ChatHeader />
-            <ChatBody />
-            <ChatFooter />
+            <ChatHeader name={name} />
+            <ChatBody messages={messages} />
+            <ChatFooter updateMessage={updateMessage} />
         </div>
     )
 }

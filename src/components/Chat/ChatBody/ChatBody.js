@@ -1,24 +1,20 @@
 import React from 'react'
 
+// import PropTypes from 'prop-types'
+// import ScrollToBottom from 'scroll-to-bottom'
 import './ChatBody.css'
 import Message from './Message/Message'
 
-function ChatBody() {
-    
+function ChatBody({messages}) {
+
     return (
-        <div className="chatBody">
-            <Message classes="messageStyle-p"/>
-            <Message classes="messageStyle-s"/>
-            <Message classes="messageStyle-p"/>
-            <Message classes="messageStyle-p"/>
-            <Message classes="messageStyle-s"/>
-            <Message classes="messageStyle-p"/>
-            <Message classes="messageStyle-s"/>
-            <Message classes="messageStyle-p"/>
-            <Message classes="messageStyle-s"/>
-            <Message classes="messageStyle-s"/>
-        </div>
-    )
-}
+            <div className="chatBody">
+                {messages.map((message, i)=>{
+                // console.log(message);
+                    return <Message key={i} body={message.body} classes={message.type === 'p' ? "messageStyle-p" : "messageStyle-s"} />
+                })}
+            </div>
+        )
+    }
 
 export default ChatBody
